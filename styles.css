@@ -145,7 +145,7 @@ a {
 
 /* Home Section */
 .home-section {
-  background-image: url('assets/homesection.png'); /* Replace with your hero image path */
+  background-image: url('homesection.png'); /* Replace with your hero image path */
   background-size: cover; /* Cover the entire section */
   background-position: center;
   background-repeat: no-repeat; /* Ensure the image doesn't repeat */
