@@ -60,9 +60,11 @@ a {
 }
 
 .header .logo img {
-  max-height: 51px;
+  max-height: 60px;
   height: auto;
   width: auto;
+  position: absolute;
+  margin: -10px 12px;
 }
 
 /* menu */
