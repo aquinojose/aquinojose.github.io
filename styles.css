@@ -565,14 +565,13 @@ a {
 .location-address1 {
   font-size: 17px;
   color: #666;
-  padding: 0px 180px;
-  margin: 0px 200px;
+  padding: 0px 200px;
 }
 
 .location-address2 {
   font-size: 15px;
   color: #666;
-  margin: 0px 200px;
+  margin: 0px 250px;
 }
 
 .datetime-heading {
