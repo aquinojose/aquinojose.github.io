@@ -563,15 +563,16 @@ a {
 }
 
 .location-address1 {
-  font-size: 20px;
+  font-size: 17px;
   color: #666;
-  margin-bottom: 0px;
+  padding: 0px 180px;
+  margin: 0px 200px;
 }
 
 .location-address2 {
   font-size: 15px;
   color: #666;
-  margin-bottom: 5px;
+  margin: 0px 200px;
 }
 
 .datetime-heading {
