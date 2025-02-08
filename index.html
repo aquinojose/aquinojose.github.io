@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Website</title>
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Logo">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ourstory.html">Our Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="wedding-details.html">Wedding Details</a></li>
+          <li><a href="https://form.jotform.com/250141347755455">RSVP</a></li>
+          <li><a href="https://www.facebook.com/xyloids">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="hero-image"></div>
+        <div class="home-content">
+            <h2>Join Us in Celebrating Our Love</h2>
+            <p>Welcome to our wedding website! We're thrilled to share our special day with you.</p>
+            <div id="countdown" class="countdown">
+                <span id="days">00</span><span class="colon">:</span>
+                <span id="hours">00</span><span class="colon">:</span>
+                <span id="minutes">00</span><span class="colon">:</span>
+                <span id="seconds">00</span>
+            </div>
+            <a href="https://form.jotform.com/250141347755455" id="rsvp-button" class="rsvp-button" target="_blank">RSVP Now!</a> <!-- RSVP button -->
+        </div>
+    </section>
+
+    <!-- Wedding Details Section -->
+    <section id="wedding-details" class="wedding-details-section">
+        <!-- <h2>Venue Maps</h2> -->
+        <p class="p-tag-maps"><em>"Click the buttons below to view the maps <br> for both the wedding and reception venues."</em></p>
+        <div class="map-buttons">
+            <button id="wedding-venue-button" class="map-button" data-mobile-url="https://maps.app.goo.gl/MgfRqMQ7JnyULe6f6">Wedding Venue</button> <!-- Wedding Venue Button -->
+            <button id="reception-venue-button" class="map-button" data-mobile-url="https://maps.app.goo.gl/ww1y87rVorBgctb9A">Reception Venue</button> <!-- Reception Venue Button -->
+        </div>
+        <div id="wedding-venue" class="map-item" style="display: none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4076.139983042989!2d121.02092501083925!3d14.654856075686563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b6fa94a7533f%3A0x4a753cf7af44d1ae!2sChrist%20the%20King%20Parish%20-%20Project%207%20(Diocese%20of%20Cubao)!5e1!3m2!1sen!2sph!4v1737006840651!5m2!1sen!2sph" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="reception-venue" class="map-item" style="display: none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4075.8552841479896!2d121.04150071083957!3d14.670151475310602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b724c7b5fd5f%3A0xed2b31cac323137b!2sGazebo%20Royale!5e1!3m2!1sen!2sph!4v1737007345052!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social-media">
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+            <a href="https://instagram.com/" target="_blank">Instagram</a>
+            <a href="https://facebook.com/" target="_blank">Facebook</a>
+        </div>
+        <p>&copy; 2025 JR & Queennie</p>
+        <p>#JRAndQueennie</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
