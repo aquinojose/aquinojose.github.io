@@ -645,6 +645,18 @@ a {
   margin: 5px;
 }
 
+.wedding-attire {
+  width: 260px;
+  height: 460px;
+  object-fit: cover;
+}
+
+.wedding-attire:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  transition: transform 0.5s ease;
+}
+
+
 /*SECOND*/
 
 .wedding-reminders {
