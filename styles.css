@@ -571,7 +571,7 @@ a {
 .location-address2 {
   font-size: 15px;
   color: #666;
-  margin-bottom: 5px;
+  margin: 0px 10px 5px;
 }
 
 .datetime-heading {
