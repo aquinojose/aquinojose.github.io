@@ -565,7 +565,7 @@ a {
 .location-address1 {
   font-size: 20px;
   color: #666;
-  margin-bottom: 0px;
+  margin: 0px 40px 0px;
 }
 
 .location-address2 {
