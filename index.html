@@ -69,5 +69,13 @@
     </footer>
 
     <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+	createChat({
+		webhookUrl: 'http://localhost:5678/webhook/4982271e-9ea0-4bb2-997a-cae47c0a3e87/chat'
+	});
+</script>
 </body>
 </html>
