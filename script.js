@@ -93,3 +93,45 @@ document.addEventListener('scroll', function() {
         homeSection.style.borderRadius = '0px';
     }
 });
+
+// Entrance overlay ring icon click - fade out overlay & fade in content + navbar
+(function () {
+    const entranceOverlay = document.getElementById('entrance-overlay');
+    const ringIcon = document.getElementById('ring-icon');
+    const mainContent = document.querySelector('main');
+    const navbar = document.getElementById('navbar');
+
+    function openSite() {
+     ringIcon.style.animationPlayState = 'paused';
+     ringIcon.style.transform = 'scale(1.2)';
+     setTimeout(() => ringIcon.style.transform = 'scale(1)', 300);
+
+     entranceOverlay.style.transition = 'opacity s ease';
+     entranceOverlay.style.opacity = 0;
+
+     setTimeout(() => {
+        entranceOverlay.style.display = 'none';
+        mainContent.hidden = false;
+        mainContent.removeAttribute('aria-hidden');
+        mainContent.focus();
+        navbar.hidden = false;
+        navbar.style.top = '0';
+        mainContent.querySelector('#home').classList.add('visible');
+     }, 1000);
+    }
+
+    ringIcon.addEventListener('click', openSite);
+    ringIcon.addEventListener('keydown', (e) => {
+     if (e.key === 'Enter' || e.key === ' ') {
+       e.preventDefault();
+       openSite();
+     }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+       mainContent.hidden = true;
+       mainContent.setAttribute('aria-hidden', 'true');
+       navbar.hidden = true;
+       navbar.style.top = '-70px';
+     });
+    })();
