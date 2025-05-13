@@ -135,3 +135,20 @@ document.addEventListener('scroll', function() {
        navbar.style.top = '-70px';
      });
     })();
+
+// Check if the overlay has been shown before
+if (!localStorage.getItem('overlayShown')) {
+    // Show the overlay
+    document.getElementById('entrance-overlay').style.display = 'flex';
+    // Add event listener to the SVG icon to hide the overlay on click
+    document.getElementById('ring-icon').addEventListener('click', function() {
+        // Hide the overlay
+        document.getElementById('entrance-overlay').style.display = 'none';
+        
+        // Set the item in localStorage to indicate the overlay has been shown
+        localStorage.setItem('overlayShown', 'true');
+    });
+} else {
+    // If already shown, hide the overlay
+    document.getElementById('entrance-overlay').style.display = 'none';
+}
