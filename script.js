@@ -152,3 +152,4 @@ if (!localStorage.getItem('overlayShown')) {
     // If already shown, hide the overlay
     document.getElementById('entrance-overlay').style.display = 'none';
 }
+
