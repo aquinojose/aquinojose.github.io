@@ -717,6 +717,17 @@ a {
   color: #e5543a;
 }
 
+#ring-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+ @keyframes ringPulse {
+      0% { filter: drop-shadow(0 0 3px #c87778); transform: scale(1); }
+      50% { filter: drop-shadow(0 0 12px #f0a8a8); transform: scale(1.15); }
+      100% { filter: drop-shadow(0 0 3px #c87778); transform: scale(1); }
+    }
+
 
 /* 48em = 768px */
 
@@ -736,6 +747,7 @@ a {
     display: none;
   }
 }
+
 
 @media (max-width: 768px) {
   .story-image {
